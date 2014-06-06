@@ -17,10 +17,10 @@ A simple starter sample showing how to use Grunt task runner and Sass to compile
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 ```
 
-#### Update Ruby
+#### Install Ruby (latest)
 
 ```
-brew upgrade ruby
+brew install ruby
 ```
 
 #### Install Git
