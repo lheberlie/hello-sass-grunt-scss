@@ -2,16 +2,11 @@
  * http://gruntjs.com/getting-started
  * http://gruntjs.com/sample-gruntfile
  *
+ * https://www.npmjs.org/package/grunt
  * https://www.npmjs.org/package/time-grunt
  * https://www.npmjs.org/package/load-grunt-tasks
- * https://www.npmjs.org/package/grunt-contrib-clean
- * https://www.npmjs.org/package/grunt-contrib-copy
- * https://www.npmjs.org/package/grunt-contrib-concat
- * https://www.npmjs.org/package/grunt-contrib-cssmin
- * https://www.npmjs.org/package/grunt-contrib-uglify
- * https://www.npmjs.org/package/grunt-targethtml
- * https://www.npmjs.org/package/grunt-contrib-htmlmin
- * https://github.com/lheberlie/grunt-manifest
+ * https://www.npmjs.org/package/grunt-contrib-sass
+ * https://www.npmjs.org/package/grunt-contrib-watch
  *
  * --------------------------------------------------------
  */
