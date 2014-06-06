@@ -1,0 +1,106 @@
+html, body {
+    margin:  0;
+    padding: 0;
+}
+
+body {
+    font:  100% Helvetica, sans-serif;
+    color: #333333;
+}
+
+h2.artist {
+    color: red;
+}
+
+aside#featuredArtist {
+    color: blue;
+}
+
+ul.nav {
+    float: right;
+}
+
+ul.nav li {
+    float: left;
+}
+
+ul.nav li a {
+    color: #111;
+}
+
+ul.nav li.current {
+    font-weight: bold;
+}
+
+#header ul.nav {
+    float: right;
+}
+
+#footer ul.nav {
+    margin-top: 1em;
+}
+
+.error, .badError {
+    border:     1px #f00;
+    background: #fdd;
+}
+
+.error.intrusion, .intrusion.badError {
+    font-size:   1.2em;
+    font-weight: bold;
+}
+
+.badError {
+    border-width: 3px;
+}
+
+.save, .delete {
+    margin:          0;
+    padding:         0.5em 1.2em;
+    text-decoration: none;
+    cursor:          pointer;
+}
+
+.save {
+    color:      #ffffff;
+    background: #0000ff;
+}
+
+.delete {
+    color:      #ffffff;
+    background: red;
+}
+
+.seasonsStyle .spring-icon {
+    background-color: red;
+}
+
+.seasonsStyle .summer-icon {
+    background-color: red;
+}
+
+.seasonsStyle .fall-icon {
+    background-color: red;
+}
+
+.seasonsStyle .winter-icon {
+    background-color: red;
+}
+
+.puma-icon {
+    background-image: url("/images/puma.png");
+    border:           2px solid black;
+    cursor:           default;
+}
+
+.sea-slug-icon {
+    background-image: url("/images/sea-slug.png");
+    border:           2px solid blue;
+    cursor:           pointer;
+}
+
+.egret-icon {
+    background-image: url("/images/egret.png");
+    border:           2px solid white;
+    cursor:           move;
+}

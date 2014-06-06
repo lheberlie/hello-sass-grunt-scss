@@ -1,0 +1,108 @@
+
+@import "reset";
+
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+h2 {
+  &.artist {
+    color: red
+  }
+}
+
+aside {
+  &#featuredArtist {
+    color: blue
+  }
+}
+
+// listing 1.1
+
+ul.nav {
+  float: right;
+  li {
+    float: left;
+    a {
+      color: #111;
+    }
+    &.current {
+      font-weight: bold
+    }
+  }
+}
+
+//listing 1.5
+
+#header ul.nav {
+  float: right;
+}
+
+#footer ul.nav {
+  margin-top: 1em;
+}
+
+// -------------------
+// selector inheritance
+// -------------------
+.error {
+  border: 1px #f00;
+  background: #fdd;
+}
+
+.error.intrusion {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.badError {
+  @extend .error;
+  border-width: 3px;
+}
+
+// -------------------
+// selector inheritance
+// with placeholder
+// inheritance
+// -------------------
+%button-reset {
+  margin: 0;
+  padding: 0.5em 1.2em;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.save {
+  @extend %button-reset;
+  color: #ffffff;
+  background: #0000ff;
+}
+
+.delete {
+  @extend %button-reset;
+  color: #ffffff;
+  background: red;
+}
+
+.seasonsStyle {
+    $seasonsMap: (spring: blue, summer: red, fall: orange, winter: white);
+    @each $season in spring, summer, fall, winter {
+        @debug $season;
+        .#{$season}-icon {
+            background-color: red;
+        }
+    }
+}
+
+@each $animal, $color, $cursor in (puma, black, default), (sea-slug, blue, pointer), (egret, white, move) {
+    @debug $color;
+    .#{$animal}-icon {
+        background-image: url('/images/#{$animal}.png');
+        border:           2px solid $color;
+        cursor:           $cursor;
+    }
+}
